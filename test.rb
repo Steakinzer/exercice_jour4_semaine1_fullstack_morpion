@@ -1,16 +1,10 @@
-require 'colorize'
-String.colors                       # return array of all possible colors names
-String.modes                        # return array of all possible modes
-String.color_samples                # displays color samples in all combinations
+choix = "a1"
+p choix[-1]
+choix = choix.upcase
 
-puts "This is blue".colorize(:blue)
-puts "This is light blue".colorize(:light_blue)
-puts "This is also blue".colorize(:color => :blue)
-puts "This is bold green".colorize(:color => :green, :mode => :bold)
-puts "This is light blue with red background".colorize(:color => :light_blue, :background => :red)
-puts "This is light blue with red background".colorize(:light_blue ).colorize( :background => :red)
-puts "This is blue text on red".blue.on_red
-puts "This is red on blue".colorize(:red).on_blue
-puts "This is red on blue and underline".colorize(:red).on_blue.underline
-puts "This is blue text on red".blue.on_red.blink
-puts "This is uncolorized".blue.on_red.uncolorize
+case choix
+when "A1", "A2", "A3"
+  p "eureka"
+end
+
+

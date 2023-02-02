@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Show
   attr_accessor :line1, :line2, :line3
 
@@ -8,21 +10,20 @@ class Show
   end
 
   def screen
-    puts "    1       2      3"
-    puts "        |      |"
+    puts '    1       2      3'
+    puts '        |      |'
     print "A \s\s#{@line1[0]}\s\s\s|"
     print "\s\s#{@line1[1]}\s\s\s|"
     print "\s\s#{@line1[2]}\s\s\s\n"
-    puts "  ------|------|------"
+    puts '  ------|------|------'
     print "B \s\s#{@line2[0]}\s\s\s|"
     print "\s\s#{@line2[1]}\s\s\s|"
     print "\s\s#{@line2[2]}\s\s\s\n"
-    puts "  ------|------|------"
+    puts '  ------|------|------'
     print "C \s\s#{@line3[0]}\s\s\s|"
     print "\s\s#{@line3[1]}\s\s\s|"
     print "\s\s#{@line3[2]}\s\s\s\n"
-    puts "        |      |"
-    puts ""
+    puts '        |      |'
+    puts ''
   end
-
 end
